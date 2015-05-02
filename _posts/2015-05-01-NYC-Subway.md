@@ -1,5 +1,9 @@
 ---
 published: true
+layout: post
+date: {}
+summary: This is a page about pages
+categories: jekyll pixyll
 ---
 
 # NYC Subway Map: A ride to fortune #
