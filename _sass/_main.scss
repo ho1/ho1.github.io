@@ -73,7 +73,7 @@ body {
   border-bottom: 2px solid #444;
 }
 
-.site-nav a + a {vgf
+.site-nav a + a {
   margin-left: 1em;
 }
 
@@ -157,7 +157,7 @@ table {
 
 .post-link .post-title {
   margin-top: 0;
-  font-weight: 200;
+  font-weight: 600;
   color: #333;
 }
 
@@ -379,7 +379,7 @@ h6,
   }
 
   .post-link .post-title {
-    margin-top: 0.1em;
+    margin-top: 0.5em;
   }
 
   .posts .post {
@@ -447,22 +447,22 @@ h6,
 @media screen and (min-width: 64em) {
   .h1,
   h1 {
-    font-size: 3.498rem;
+    font-size: 4.498rem;
   }
 
   .h2,
   h2 {
-    font-size: 2.18rem;
+    font-size: 3.18rem;
   }
 
   .h3,
   h3 {
-    font-size: 1.249rem;
+    font-size: 2.249rem;
   }
 
   .h4,
   h4 {
-    font-size: 0.991rem;
+    font-size: 1.591rem;
   }
 
   .posts .post-meta {
@@ -470,12 +470,12 @@ h6,
   }
 
   .post-link .post-title {
-    margin-top: 0.0em;
+    margin-top: .125em;
   }
 
   .posts .post {
-    margin-bottom: 1.00em;
-    padding-bottom: 0.1em;
+    margin-bottom: 2.666em;
+    padding-bottom: 1.333em;
     border-bottom: thin solid #f3f3f3;
   }
 
