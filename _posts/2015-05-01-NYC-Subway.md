@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 # NYC Subway Map: A ride to fortune #
