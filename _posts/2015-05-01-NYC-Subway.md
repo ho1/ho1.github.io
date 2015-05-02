@@ -2,7 +2,7 @@
 published: true
 layout: post
 date: {}
-summary: This is a page about pages
+summary: See what the different elements looks like. Your markdown has never looked better. I promise.
 categories: jekyll pixyll
 ---
 
