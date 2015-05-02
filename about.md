@@ -1,19 +1,10 @@
 ---
 layout: page
-title: About Pixyll
+title: About HenningO
 permalink: /about/
+published: true
 ---
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
+This is my little hide-out online, where I keep track of small little projects I've worked on over the years.
 
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
-request a feature, report a bug, or contribute. It's free, and open source
-([MIT](http://opensource.org/licenses/MIT)).
-
-Thanks to the following:
-
-* [BASSCSS](http://basscss.com)
-* [Jekyll](http://jekyllrb.com)
-* [Refills](http://refills.bourbon.io/)
-* [Solarized](http://ethanschoonover.com/solarized)
+This website is powered by [Jekyll](http://jekyllrb.com) and the [Pixyll](https://github.com/johnotander/pixyll) theme
