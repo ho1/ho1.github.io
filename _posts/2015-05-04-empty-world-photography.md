@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-date: {}
+date: 2014-06-10T12:31:19.000Z
 summary: See what the different elements looks like. Your markdown has never looked better. I promise.
 categories: jekyll pixyll
 ---
