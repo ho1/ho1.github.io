@@ -1,14 +1,15 @@
 ---
-published: true
+published: false
 layout: post
-date:       2014-06-10 12:31:19
+date: {}
 summary: See what the different elements looks like. Your markdown has never looked better. I promise.
 categories: jekyll pixyll
 ---
 
 # NYC Subway Map: A ride to fortune #
 
-
+USE LEAFLET to EMBED STUFF
+http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
 
 On my first visit to New York City in 2006, me and my friends decide to go explore Brooklyn. We entered the underground near Wall Street and twenty minutes later we came up again, this time surrounded by low-income housing. In mere minutes, the subway can virtually *teleport* you between very different settings. From affluence to poverty or vice versa, it can be a ride to fortune.  
 
