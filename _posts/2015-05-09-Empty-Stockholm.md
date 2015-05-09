@@ -8,7 +8,7 @@ categories: photography
 
 Inspired by a project/book [Empty LA](http://mlogue.com/p586914549) by [Matt Logue](http://mlogue.com/), I decided to try to recreate the same type of photos of Stockholm. 
 
-Using Photoshop's image stacking functionality and a few dozen exposures, I was able create photos of an empty Stockholm.
+Using [Photoshop's image stacking functionality](http://www.creativetechs.com/iq/photoshop_cs3s_automatic_people_remover.html) and a few dozen exposures, I was able create photos of an empty Stockholm.
 
 ![Essingeleden](https://cloud.githubusercontent.com/assets/12212438/7552069/83adbab0-f65e-11e4-9106-93c74d1cdcfe.jpg)
 
