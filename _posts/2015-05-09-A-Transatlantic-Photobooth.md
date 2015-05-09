@@ -23,10 +23,13 @@ I early on decided to use VB.NET to write the code that would tie all of these s
 
 The first thing I had to tackle was to figure out a robust way of capturing the photos. My first thought was to use the [Canon SDK](http://www.usa.canon.com/cusa/consumer/standard_display/sdk_homepage) to trigger and acquire pictures from our Canon DSLR. After poking at it for a while, it became clear that it'd be a bit of an overkill.
 
-So I started looking at using a webcam instead, since the images were printed in very small dimensions, I didn't really have to worry about resolution. With webcams being USB and "Plug-n-Play" I figured that it wouldn't too difficult to grab the images. After having tried numerous code snippets I had found online (none of which worked well) and decided that I didn't want to dive into the Windows API, I decided to go with OpenCV. OpenCV is admittedly a pretty big overkill for what I was trying to do, but the [Emgu .NET wrapper for OpenCV](http://www.emgu.com/wiki/index.php/Main_Page) was well-documented and easy to use. Combined with a Logitech C920 webcam, I got pretty crisp looking photos into VB.NET.
+So I started looking at using a webcam instead, since the images were printed in very small dimensions, I didn't really have to worry about resolution. With webcams being USB and "Plug-n-Play" I figured that it wouldn't too difficult to grab the images. After having tried numerous code snippets I had found online (none of which worked well) and decided that I didn't want to dive into the Windows API, I decided to go with OpenCV. OpenCV is admittedly a pretty big overkill for what I was trying to do, but the [Emgu .NET wrapper for OpenCV](http://www.emgu.com/wiki/index.php/Main_Page) was well-documented and easy to use. Combined with a Logitech C920 webcam, I got pretty crisp looking photos into VB.NET. The C920 webcam also has a 1/4" mount which allowed me to easily attached to a tripod.
 
 ## Pushing the button
 I needed a way for the guests to start the process and who doesn't like to push a big red button? But how would I get the signal from the button press into my .NET application. I toyed with the idea of using an Adruino or the USB data acquistion that I laying around. Instead, I followed the [KISS principle](http://en.wikipedia.org/wiki/KISS_principle) and repurposed an old USB mouse for the task. A few wires and some soldering allowed me to connect the button's switch electrically to the _right mousebutton_. Even better, since .NET has built-in events for mouse clicks it was a breeze to trigger the photo process.
+
+## Making it portable
+To ensure fun and crazy photos in the photobooth, I wanted four walls around the guests as they were having their photos taken (as opposed to just a backdrop). But bringing four walls across the Atlantic was not ideal. Some researched showed that people had successfully used PVC tubing and sheets of fabric to 
 
 
 
