@@ -5,6 +5,7 @@ date: 2015-05-09T21:21:19.000Z
 summary: Photos of empty streets in Stockholm.
 categories: photography
 ---
+
 Inspired by a project/book [Empty LA](http://mlogue.com/p586914549) by [Matt Logue](http://mlogue.com/), I decided to try to recreate the same type of photos of Stockholm. 
 
 Using Photoshop's image stacking functionality and a few dozen exposures, I was able create photos of an empty Stockholm.
