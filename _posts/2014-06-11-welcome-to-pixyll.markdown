@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hello, Pixyll"
-date: {}
+date: 2013-11-29 00:00:00 -0500
 summary: "Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 categories: jekyll pixyll
 published: false
