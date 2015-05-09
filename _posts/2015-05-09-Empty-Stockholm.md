@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: subwaypost
 date: 2015-05-09T21:21:19.000Z
 summary: Photos of empty streets in Stockholm.
 categories: photography
