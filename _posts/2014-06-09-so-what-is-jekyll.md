@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "So, What is Jekyll?"
-date: {}
+date: 2013-11-29 00:00:00 -0500
 summary: "Transform your plain text into static websites and blogs. Simple, static, and blog-aware."
 categories: jekyll pixyll
 published: false
