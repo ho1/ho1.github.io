@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-date: 2014-05-09T21:21:19.000Z
+date: 2015-05-09T21:21:19.000Z
 summary: Photos of empty streets in Stockholm.
 categories: photography
 ---
