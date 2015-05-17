@@ -2,34 +2,48 @@
 published: false
 ---
 
+
 For our wedding a few years ago, my wife convinced me that we needed a photobooth. It'd be a great way to capture fun photos of our family and friends and also provide them with a keepsake.
 
-Most people would have found a local supplier and it would've been another checked box in the wedding planning list. In our case however, since we were having two celebrations, on two sides of the Atlantic, in two weeks, that wouldn't work. So I decided to build a photobooth.
+Most people would have found a local supplier and it would've been another checked box in the wedding to-do list. In our case however, since we were having two celebrations, on two sides of the Atlantic, in two weeks, that wouldn't work. So I decided to build a photobooth.
 
 The specifications for the photobooth almost wrote themselves:
 - It had to be easy to use and require little supervision
 - It had to pack down and fit into a duffle bag which weighed less than 70 lbs/32 kg
-- It had two print two "filmstrips", one for us to keep and one for the guests to take
+- It had two print two "filmstrips", one for us to keep and one for the guests
 
 The overall process would be something like this:
 1. Guests trigger process by pushing a button
 2. Four photos are taken and combined into filmstrip
 3. Two filmstrips are printed onto 4x6 photo paper
 
-I early on decided to use VB.NET to write the code that would tie all of these steps together. Grabbing images and sending them to a printer them seemed like tasks where I could leverage standard .NET functionality.
+I early on decided to use VB.NET to write the code that would tie all of these steps together. Grabbing images and sending them to a printer them seemed like tasks where I could leverage standard .NET functionality, plus I had written code in VB.NET at work for the past few years.
 
 
 ## Taking the photos
-
 The first thing I had to tackle was to figure out a robust way of capturing the photos. My first thought was to use the [Canon SDK](http://www.usa.canon.com/cusa/consumer/standard_display/sdk_homepage) to trigger and acquire pictures from our Canon DSLR. After poking at it for a while, it became clear that it'd be a bit of an overkill.
 
 So I started looking at using a webcam instead, since the images were printed in very small dimensions, I didn't really have to worry about resolution. With webcams being USB and "Plug-n-Play" I figured that it wouldn't too difficult to grab the images. After having tried numerous code snippets I had found online (none of which worked well) and decided that I didn't want to dive into the Windows API, I decided to go with OpenCV. OpenCV is admittedly a pretty big overkill for what I was trying to do, but the [Emgu .NET wrapper for OpenCV](http://www.emgu.com/wiki/index.php/Main_Page) was well-documented and easy to use. Combined with a Logitech C920 webcam, I got pretty crisp looking photos into VB.NET. The C920 webcam also has a 1/4" mount which allowed me to easily attached to a tripod.
 
 ## Pushing the button
-I needed a way for the guests to start the process and who doesn't like to push a big red button? But how would I get the signal from the button press into my .NET application. I toyed with the idea of using an Adruino or the USB data acquistion that I laying around. Instead, I followed the [KISS principle](http://en.wikipedia.org/wiki/KISS_principle) and repurposed an old USB mouse for the task. A few wires and some soldering allowed me to connect the button's switch electrically to the _right mousebutton_. Even better, since .NET has built-in events for mouse clicks it was a breeze to trigger the photo process.
+I needed a way for the guests to start the process and who doesn't like to push a [big red button](https://www.sparkfun.com/products/9181)? But how would I get the signal from the button press into my .NET application. I toyed with the idea of using an Adruino or the USB data acquistion that I laying around. Instead, I followed the [KISS principle](http://en.wikipedia.org/wiki/KISS_principle) and repurposed an old USB mouse for the task. A few wires and some soldering allowed me to connect the button's switch electrically to the _right mousebutton_. Even better, since .NET has built-in events for mouse clicks it was a breeze to trigger the photo process.
+
+## Printing it all
+I found a really compact photo printer ([HiTi P110S](http://www.hiti.com/us/Products/PhotoPrinter_P110S_Overview.asp)) that was reasonably princed (around $250) and printed 4x6 photos with solid quality. Paper and ink was sold in packages and I think each print ended up being 40 cents. To split the 4x6 into two 2x6 "strips" we just had a pair of scissors, very much in line with the KISS principle.
+
+## The code
+With the webcam, button and printer in place, writing the code was pretty straight forward. The windowed software was listening for a mouse click which triggered a method which would:
+1. Capture a frame from the webcam and simultaneuously play a sound to indicate
+2. Assemble four frames into a film strip
+3. Assemble two film strips into a 4x6 format
+4. Send it to the printer
+
+
 
 ## Making it portable
-To ensure fun and crazy photos in the photobooth, I wanted four walls around the guests as they were having their photos taken (as opposed to just a backdrop). But bringing four walls across the Atlantic was not ideal. Some researched showed that people had successfully used PVC tubing and sheets of fabric to 
+To ensure fun and crazy photos in the photobooth, I wanted four walls around the guests as they were having their photos taken (as opposed to just a backdrop). But bringing four walls across the Atlantic was not ideal. Some research showed that people had successfully used PVC tubing and sheets of fabric to build temporary structures ([forts!](http://www.instructables.com/id/Easy-Rebuildable-PVC-Fort/)). Instead a single tube for the full height of the booth, I split it into three, with three additional joints. This allowed me to fit the pipes into the designated duffle bag.
 
+For the fabric we went with a multicolored striped fabric as it looked more festive and would consume the ink in the printer more evenly!
 
-
+## Lessons learnt
+Overall I was really happy with how the photobooth performed, we captured about 240 
