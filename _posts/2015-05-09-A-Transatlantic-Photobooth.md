@@ -3,6 +3,7 @@ published: false
 ---
 
 
+
 For our wedding a few years ago, my wife convinced me that we needed a photobooth. It'd be a great way to capture fun photos of our family and friends and also provide them with a keepsake.
 
 Most people would have found a local supplier and it would've been another checked box in the wedding to-do list. In our case however, since we were having two celebrations, on two sides of the Atlantic, in two weeks, that wouldn't work. So I decided to build a photobooth.
@@ -46,4 +47,4 @@ To ensure fun and crazy photos in the photobooth, I wanted four walls around the
 For the fabric we went with a multicolored striped fabric as it looked more festive and would consume the ink in the printer more evenly!
 
 ## Lessons learnt
-Overall I was really happy with how the photobooth performed, we captured about 240 
+Overall I was really happy with how the photobooth performed, we captured about 240 photostrips throughout the two events. 
