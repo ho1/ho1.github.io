@@ -26,8 +26,16 @@ The first thing I had to tackle was to figure out a robust way of capturing the 
 
 So I started looking at using a webcam instead, since the images were printed in very small dimensions, I didn't really have to worry about resolution. With webcams being USB and "Plug-n-Play" I figured that it wouldn't too difficult to grab the images. After having tried numerous code snippets I had found online (none of which worked well) and decided that I didn't want to dive into the Windows API, I decided to go with OpenCV. OpenCV is admittedly a pretty big overkill for what I was trying to do, but the [Emgu .NET wrapper for OpenCV](http://www.emgu.com/wiki/index.php/Main_Page) was well-documented and easy to use. Combined with a Logitech C920 webcam, I got pretty crisp looking photos into VB.NET. The C920 webcam also has a 1/4" mount which allowed me to easily attached to a tripod.
 
+![](https://cloud.githubusercontent.com/assets/12212438/7826201/1ed41e1c-03d4-11e5-8f0d-a76955b3eac6.JPG)
+
+
 ## Pushing the button
-I needed a way for the guests to start the process and who doesn't like to push a [big red button](https://www.sparkfun.com/products/9181)? But how would I get the signal from the button press into my .NET application. I toyed with the idea of using an Adruino or the USB data acquistion that I laying around. Instead, I followed the [KISS principle](http://en.wikipedia.org/wiki/KISS_principle) and repurposed an old USB mouse for the task. A few wires and some soldering allowed me to connect the button's switch electrically to the _right mousebutton_. Even better, since .NET has built-in events for mouse clicks it was a breeze to trigger the photo process.
+I needed a way for the guests to start the process and who doesn't like to push a [big red button](https://www.sparkfun.com/products/9181)? But how would I get the signal from the button press into my .NET application. I toyed with the idea of using an Adruino or the USB data acquistion that I laying around. Instead, I followed the [KISS principle](http://en.wikipedia.org/wiki/KISS_principle) and repurposed an old USB mouse for the task. A few wires and some soldering allowed me to connect the button's switch electrically to the _right mousebutton_. I even could use the cardboard box the button had shipped in (with a fresh coat of paint). A few pieces of foam made sure the mouse board stayed in place. But perhaps the biggest win was since .NET has built-in events for mouse clicks it was a breeze to trigger the photo process.
+![](https://cloud.githubusercontent.com/assets/12212438/7826038/a0c243ac-03d1-11e5-9853-434b7feadc42.JPG)
+_A big red button_
+
+![](https://cloud.githubusercontent.com/assets/12212438/7826039/a0c6411e-03d1-11e5-83db-4de236cc9640.JPG)
+_The big red button's switch soldered to the mouse board along with foam to keep the board (and more importantly my solderings with questionable quality) in place._
 
 ## Printing it all
 I found a really compact photo printer ([HiTi P110S](http://www.hiti.com/us/Products/PhotoPrinter_P110S_Overview.asp)) that was reasonably princed (around $250) and printed 4x6 photos with solid quality. Paper and ink was sold in packages and I think each print ended up being 40 cents. To split the 4x6 into two 2x6 "strips" we just had a pair of scissors, very much in line with the KISS principle.
@@ -42,9 +50,17 @@ With the webcam, button and printer in place, writing the code was pretty straig
 
 
 ## Making it portable
-To ensure fun and crazy photos in the photobooth, I wanted four walls around the guests as they were having their photos taken (as opposed to just a backdrop). But bringing four walls across the Atlantic was not ideal. Some research showed that people had successfully used PVC tubing and sheets of fabric to build temporary structures ([forts!](http://www.instructables.com/id/Easy-Rebuildable-PVC-Fort/)). Instead a single tube for the full height of the booth, I split it into three, with three additional joints. This allowed me to fit the pipes into the designated duffle bag.
+To ensure fun and crazy photos in the photobooth, I wanted four walls around the guests as they were having their photos taken (as opposed to just a backdrop). But bringing four walls across the Atlantic was not ideal. Some research showed that people had successfully used PVC tubing and sheets of fabric to build temporary structures ([forts!](http://www.instructables.com/id/Easy-Rebuildable-PVC-Fort/)).
+
+![](https://cloud.githubusercontent.com/assets/12212438/7826036/a0b3c2b4-03d1-11e5-9d3d-28eb9a123f40.JPG)
 
 For the fabric we went with a multicolored striped fabric as it looked more festive and would consume the ink in the printer more evenly!
+![](https://cloud.githubusercontent.com/assets/12212438/7826037/a0c0c1bc-03d1-11e5-8622-8d9a9481309a.JPG)
+
+Instead a single tube for the full height of the booth, I split it into three, with three additional joints. This allowed me to fit the tubes into the designated duffle bag.
+
+![Everything but the printer in the bag!](https://cloud.githubusercontent.com/assets/12212438/7826035/a0b1fb3c-03d1-11e5-9276-dba571ceaa20.JPG)
+
 
 ## Lessons learnt
 Overall I was really happy with how the photobooth performed, we captured about 240 photostrips throughout the two events. 
