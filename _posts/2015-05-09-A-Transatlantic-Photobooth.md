@@ -1,5 +1,9 @@
 ---
 published: true
+layout: post
+date: 2015-05-09T21:21:19.000Z
+summary: The design and development of a portable photobooth
+categories: photography programming
 ---
 
 
