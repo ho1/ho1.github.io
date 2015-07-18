@@ -4,6 +4,7 @@ published: false
 
 
 
+
 For our wedding a few years ago, my wife convinced me that we needed a photobooth. It'd be a great way to capture fun photos of our family and friends and also provide them with a keepsake.
 
 Most people would have found a local supplier and it would've been another checked box in the wedding to-do list. In our case however, since we were having two celebrations, on two sides of the Atlantic, in two weeks, that wouldn't work. So I decided to build a photobooth.
@@ -43,13 +44,15 @@ I found a really compact photo printer ([HiTi P110S](http://www.hiti.com/us/Prod
 ## The code
 With the webcam, button and printer in place, writing the code was pretty straight forward. The windowed software was listening for a mouse click which triggered a method which would:
 1. Capture a frame from the webcam and simultaneuously play a sound to indicate
-2. Assemble four frames into a film strip
-3. Assemble two film strips into a 4x6 format
-4. Send it to the printer
+2. Assemble four frames into a film strip and assemble two film strips into a 4x6 format
+3. Send it to the printer
 
+Once I got the three steps working, it was all put together into a simple WinForms application in VB.NET to make it easy to start it all up. But in reality, the GUI was never really used as the users would just use the red button and the audible feedback to interact with the photobooth. I had some thoughts of using the screen of the laptop that ran everything to serve as a real-time viewport, but decided to just keep simple.
 
+The code weighs in at under 200 lines and I think it shows the benefit of using Emgu CV and the .NET functionality to handle the webcam, image processing and printing. The source code of the software which I named FotoBoto, [is available on GitHub](https://github.com/ho1/FotoBoto). It's been tested with VS2015 Community Edition and to make it easy to get started all dependencies are included in the /bin/ folders. Perhaps not best practice, but it getting those things right was one of the things I struggled with learning .NET and for a stressed out groom or bride, it's the last thing you want to be worried about! 
 
 ## Making it portable
+
 To ensure fun and crazy photos in the photobooth, I wanted four walls around the guests as they were having their photos taken (as opposed to just a backdrop). But bringing four walls across the Atlantic was not ideal. Some research showed that people had successfully used PVC tubing and sheets of fabric to build temporary structures ([forts!](http://www.instructables.com/id/Easy-Rebuildable-PVC-Fort/)).
 
 ![](https://cloud.githubusercontent.com/assets/12212438/7826036/a0b3c2b4-03d1-11e5-9d3d-28eb9a123f40.JPG)
@@ -63,4 +66,6 @@ Instead a single tube for the full height of the booth, I split it into three, w
 
 
 ## Lessons learnt
-Overall I was really happy with how the photobooth performed, we captured about 240 photostrips throughout the two events. 
+Overall I was really happy with how the photobooth performed, we captured about 240 photostrips throughout the two events.
+
+![The final results](https://cloud.githubusercontent.com/assets/12212438/8763405/225a2ade-2d57-11e5-8ba1-9c02d0f6da38.jpg)
