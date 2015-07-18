@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: 2014-06-14T12:31:19.000Z
 summary: See what the different elements looks like. Your markdown has never looked better. I promise.
