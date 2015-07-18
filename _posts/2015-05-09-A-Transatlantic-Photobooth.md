@@ -1,9 +1,9 @@
 ---
 published: true
 layout: post
-date: 2015-05-09T21:21:19.000Z
-summary: The design and development of a portable photobooth
-categories: photography programming
+date: {}
+summary: See what the different elements looks like. Your markdown has never looked better. I promise.
+categories: jekyll pixyll
 ---
 
 
